@@ -347,6 +347,23 @@
   }
 
   /* -----------------------------------------------------------------------
+     Carte Google Maps : chargée uniquement après clic (aucun appel à Google avant)
+     ----------------------------------------------------------------------- */
+  $$("[data-map-load]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var map = btn.closest(".map");
+      var frame = document.createElement("iframe");
+      frame.src = map.getAttribute("data-map-src");
+      frame.title = "Carte Google Maps : Cabanes du Sellier, Saint-André-de-Cubzac";
+      frame.loading = "lazy";
+      frame.referrerPolicy = "no-referrer-when-downgrade";
+      frame.allowFullscreen = true;
+      map.innerHTML = "";
+      map.appendChild(frame);
+    });
+  });
+
+  /* -----------------------------------------------------------------------
      Comparateur avant / après
      ----------------------------------------------------------------------- */
   $$(".ba").forEach(function (box) {
