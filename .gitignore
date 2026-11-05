@@ -1,0 +1,8 @@
+# Fichiers sources bruts (déjà copiés et renommés dans assets/)
+Julian photos/
+
+# Fichiers système
+Thumbs.db
+desktop.ini
+.DS_Store
+*.tmp
