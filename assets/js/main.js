@@ -70,9 +70,12 @@
      Header : fond au défilement, masquage en descendant
      ----------------------------------------------------------------------- */
   var header = $("#header");
+  var quick = $(".quick-contact");
   var lastY = window.scrollY;
   function onScroll() {
     var y = window.scrollY;
+    // Barre « Appeler / WhatsApp » (mobile) : visible une fois le haut de page dépassé
+    if (quick) quick.classList.toggle("is-visible", y > 320);
     if (header) {
       header.classList.toggle("is-solid", y > 40);
       if (!html.classList.contains("menu-open")) {

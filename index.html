@@ -78,7 +78,7 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="preload" href="assets/fonts/cormorant-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="assets/css/main.css?v=5">
+  <link rel="stylesheet" href="assets/css/main.css?v=6">
   <script>(function(){var h=document.documentElement;h.classList.add('js');try{var s=window.sessionStorage;if(s.getItem('cds-pt'))h.classList.add('pt-in');if(h.getAttribute('data-page')==='accueil'&&!s.getItem('cds-intro')&&!window.matchMedia('(prefers-reduced-motion: reduce)').matches)h.classList.add('intro-on')}catch(e){}setTimeout(function(){if(!h.classList.contains('ready')){h.classList.remove('js','pt-in','intro-on');h.classList.add('no-anim')}},5000)})();</script>
 </head>
 <body>
@@ -313,6 +313,36 @@
       </div>
     </section>
 
+    <section class="section reviews" id="avis">
+      <div class="container">
+        <div class="section-head section-head--row">
+          <div>
+            <span class="eyebrow" data-reveal>Avis clients</span>
+            <h2 data-split style="margin-top:20px">La parole à ceux qui nous ont confié <em>leurs pièces</em></h2>
+          </div>
+          <p data-reveal>Chaque avis compte pour un artisan : il aide d’autres clients à choisir en confiance et récompense le travail bien fait.</p>
+        </div>
+
+        <div class="reviews__track">
+          <!--
+            Pour ajouter un avis Google, dupliquer ce bloc et le placer AVANT la carte « reviews__cta » :
+            <figure class="review" data-reveal>
+              <span class="stars" aria-label="5 étoiles sur 5">★★★★★</span>
+              <blockquote>Texte de l’avis, recopié tel quel depuis Google.</blockquote>
+              <figcaption><strong>Prénom N.</strong><span>Avis Google · mois année</span></figcaption>
+            </figure>
+          -->
+
+          <div class="review reviews__cta" data-reveal>
+            <span class="stars" aria-label="5 étoiles sur 5">★★★★★</span>
+            <h3>Vous avez fait appel à l’atelier ?</h3>
+            <p>Partagez votre expérience en quelques mots sur Google : cela prend une minute et aide énormément.</p>
+            <a class="btn btn--gold" href="https://www.google.com/maps/search/?api=1&query=Cabanes+du+Sellier+Saint-Andr%C3%A9-de-Cubzac" target="_blank" rel="noopener" data-magnetic><span class="btn__label">Laisser un avis Google</span><span class="btn__arrow" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="section cta section--cream">
       <div class="cta__ring" aria-hidden="true"></div>
       <div class="cta__ring cta__ring--2" aria-hidden="true"></div>
@@ -378,8 +408,14 @@
     </div>
   </footer>
 
+  <div class="quick-contact" aria-label="Contact rapide">
+    <a class="quick-contact__btn" href="tel:+33656875416"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 3.5l2.6-.4 1.6 4-1.9 1.4a11 11 0 0 0 5 5l1.4-1.9 4 1.6-.4 2.6a2 2 0 0 1-2.1 1.7A15.5 15.5 0 0 1 4.9 5.6 2 2 0 0 1 6.6 3.5z"/></svg><span>Appeler</span></a>
+    <a class="quick-contact__btn quick-contact__btn--wa" href="https://wa.me/33656875416?text=Bonjour%2C%20je%20vous%20contacte%20depuis%20le%20site%20Cabanes%20du%20Sellier%20pour%20une%20demande%20de%20devis." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5a8.5 8.5 0 0 0-7.4 12.7L3.5 20.5l4.4-1.1A8.5 8.5 0 1 0 12 3.5z"/><path class="d" d="M8.8 9.2c.2 2.6 2.4 4.9 5 5.2l1.1-1.2-1.6-.8-.7.7a4 4 0 0 1-2-2l.7-.7-.8-1.6z"/></svg><span>WhatsApp</span></a>
+  </div>
+
+
   <script src="assets/js/vendor/gsap.min.js" defer></script>
   <script src="assets/js/vendor/ScrollTrigger.min.js" defer></script>
-  <script src="assets/js/main.js?v=3" defer></script>
+  <script src="assets/js/main.js?v=4" defer></script>
 </body>
 </html>
